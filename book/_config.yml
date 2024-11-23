@@ -35,6 +35,9 @@ sphinx:
     - download_link_replacer
     - sphinx.ext.extlinks
     - sphinx_image_inverter
+    - sphinx_proof
+    - sphinx_togglebutton
+    - sphinx_exercise
 
 bibtex_bibfiles: 
   - references.bib
