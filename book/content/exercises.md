@@ -10,11 +10,10 @@ where `<content>` is what will be inside the exercise. `<title>` will be display
 
 
 ## Example
-::::::{exercise} Exercise
-$2 + 2 = 4$
+::::::{exercise} Solve for x
+Solve the equation $x^2 - 4 = 0$.
 ::::::
 ```
-::::::{exercise} Exercise
-$2 + 2 = 4$
+::::::{exercise} Solve for x
+Solve the equation $x^2 - 4 = 0$.
 ::::::
-```

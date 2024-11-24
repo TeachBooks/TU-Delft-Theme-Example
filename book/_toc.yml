@@ -7,6 +7,4 @@ parts:
     - file: content/admonitions.md
     - file: content/proofs.md
     - file: content/exercises.md
-    - file: content/references.md
-    - file: content/changelog.md
     - file: content/credits.md

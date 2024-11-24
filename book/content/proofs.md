@@ -10,72 +10,71 @@ where `<type>` is the type of the proof component used (**important**: type is n
 
 ## `prf:definition`
 
-::::::{prf:definition} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:definition} Triangle
+A **triangle** is a polygon with three edges and three vertices.
 ::::::
 
 ```
-::::::{prf:definition} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:definition} Triangle
+A **triangle** is a polygon with three edges and three vertices.
 ::::::
 ```
 
 ## `prf:example`
 
-::::::{prf:example} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:example} Triangle
+A triangle with side lengths 3, 4, and 5 is a right triangle because it satisfies the Pythagorean theorem.
 ::::::
 
 ```
-::::::{prf:example} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:example} Triangle
+A triangle with side lengths 3, 4, and 5 is a right triangle because it satisfies the Pythagorean theorem.
 ::::::
 ```
 
 ## `prf:proposition`
 
-::::::{prf:proposition} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:proposition} Sum of Angles
+The sum of the interior angles of a triangle is always 180 degrees.
 ::::::
 
 ```
-::::::{prf:proposition} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:proposition} Sum of Angles
+The sum of the interior angles of a triangle is always 180 degrees.
 ::::::
 ```
 
 ## `prf:corollary`
 
-::::::{prf:corollary} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:corollary} Equilateral Triangle
+If a triangle is equilateral, each of its angles measures 60 degrees.
 ::::::
 
 ```
-::::::{prf:corollary} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:corollary} Equilateral Triangle
+If a triangle is equilateral, each of its angles measures 60 degrees.
 ::::::
 ```
 
 ## `prf:theorem`
 
-::::::{prf:theorem} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:theorem} Pythagorean Theorem
+In a right triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides.
 ::::::
 
 ```
-::::::{prf:theorem} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:theorem} Pythagorean Theorem
+In a right triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides.
 ::::::
 ```
 
 ## `prf:algorithm`
 
-::::::{prf:algorithm} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:algorithm} Selection Sort
+To sort an array of numbers, repeatedly find the smallest number and move it to the beginning.
 ::::::
 
 ```
-::::::{prf:algorithm} Software Architecture
-**Software architecture** is the fundamental organisation of a system, its components, relationships between them, and its constraints.
+::::::{prf:algorithm} Selection Sort
+To sort an array of numbers, repeatedly find the smallest number and move it to the beginning.
 ::::::
-```
