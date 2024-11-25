@@ -1,0 +1,269 @@
+body.custom-style-enabled {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+body.custom-style-enabled h1, 
+body.custom-style-enabled h2, 
+body.custom-style-enabled h3, 
+body.custom-style-enabled h4, 
+body.custom-style-enabled h5, 
+body.custom-style-enabled h6 {
+  font-family: RobotoSlab, Arial;
+}
+ 
+body.custom-style-enabled .logo__title {
+  font-family: RobotoSlab, Arial !important;
+}
+
+:root {
+    --raspberry: rgb(165,0,52);
+    --raspberry-min: rgb(165,0,52,3%);
+    --raspberry-mid: rgb(165,0,52,20%);
+    --yellow: #FFB81C;
+    --yellow-min: #FFB81C05;
+    --yellow-mid: #FFB81C20;
+    --darkGreen: #009B77;
+    --darkGreen-min: #009B7710;
+    --darkGreen-mid: #009B7725;
+    --blue: #0076C2;
+    --blue-min: #0076C210;
+    --blue-mid: #0076C225;
+    --black: var(--pst-color-text-base);
+    --black-min: #56565605;
+    --black-mid: #56565625;
+    --orange: #EC6842;
+    --orange-min: #EC684210;
+    --orange-mid: #EC684225;
+    --cyan: #00A6D6;
+    --gray: #7d7d7d;
+    --gray-min: #7d7d7d05;
+    --gray-mid: #7d7d7d20;
+    --purple: #6f1d77;
+    --purple-min: #6f1d7705;
+    --purple-mid: #6f1d7720;
+    --pink: #EF60A3;
+    --pink-min: #EF60A310;
+    --pink-mid: #EF60A325;
+    --red: #E03C31;
+    --red-min: #E03C3110;
+    --red-mid: #E03C3125;
+    --green: #6CC24A;
+    --green-min: #6CC24A10;
+    --green-mid: #6CC24A25;
+  }
+  
+  
+  body.custom-style-enabled div.grasple p.admonition-title::after {
+    content: "\f12e";
+    color: var(--raspberry);
+  }
+  body.custom-style-enabled div.grasple p.admonition-title::before {
+    content: "";
+  }
+  body.custom-style-enabled div.grasple {
+    border-color: var(--raspberry);
+    background-color: var(--raspberry-min);
+  }
+  body.custom-style-enabled div.grasple > p.admonition-title {
+    background-color: var(--raspberry-mid);
+  }
+  
+  body.custom-style-enabled div.exercise p.admonition-title::after {
+    content: "\f12e";
+    color: var(--raspberry);
+  }
+  body.custom-style-enabled div.exercise p.admonition-title::before {
+    content: "";
+  }
+  body.custom-style-enabled div.exercise {
+    border-color: var(--raspberry);
+    background-color: var(--raspberry-min);
+  }
+  body.custom-style-enabled div.exercise > p.admonition-title {
+    background-color: var(--raspberry-mid);
+  }
+  
+  
+  body.custom-style-enabled div.definition p.admonition-title::after {
+    content: "\f02d";
+    color: var(--blue);
+  }
+  body.custom-style-enabled div.definition {
+    border-color: var(--blue);
+    background-color: var(--blue-min);
+  }
+  body.custom-style-enabled div.definition > p.admonition-title {
+    background-color: var(--blue-mid);
+  }
+  
+  body.custom-style-enabled div.theorem  p.admonition-title::after,
+  body.custom-style-enabled div.proposition p.admonition-title::after,
+  body.custom-style-enabled div.corollary p.admonition-title::after {
+    content: "\f51b";
+    color: var(--darkGreen);
+  }
+  body.custom-style-enabled div.theorem, 
+  body.custom-style-enabled div.proposition, 
+  body.custom-style-enabled div.corollary {
+    border-color: var(--darkGreen);
+    background-color: var(--darkGreen-min);
+  }
+  body.custom-style-enabled div.theorem > p.admonition-title,
+   body.custom-style-enabled div.proposition > p.admonition-title,
+   body.custom-style-enabled div.corollary >p.admonition-title {
+    background-color: var(--darkGreen-mid);
+  }
+  
+  body.custom-style-enabled div.example {
+    border-color: var(--yellow);
+    background-color: var(--yellow-min);
+  }
+  body.custom-style-enabled div.example > p.admonition-title {
+    background-color: var(--yellow-mid);
+    /* color: white; */
+  }
+  body.custom-style-enabled div.example p.admonition-title::after {
+    content: "\f002";
+    transform: scale(-1, 1);
+    color: var(--yellow);
+  }
+  
+  body.custom-style-enabled div.admonition.solution {
+    border-color: var(--purple);
+    background-color: var(--purple-min);
+  }
+  
+  body.custom-style-enabled div.admonition.solution > .admonition-title {
+    background-color: var(--purple-mid);
+    /* color: white; */
+  }
+  
+  body.custom-style-enabled div.admonition.solution > .admonition-title::after {
+    content: "\e5a0";
+    color: var(--purple);
+  }
+  
+  body.custom-style-enabled div.admonition.myproof {
+    border-color: var(--darkGreen);
+    background-color: var(--gray-min);
+  }
+  
+  body.custom-style-enabled div.admonition.myproof > .admonition-title {
+    background-color: var(--gray-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.myproof > .admonition-title::after {
+    content: "\f51c";
+    color: var(--gray);
+  }
+  
+  body.custom-style-enabled div.algorithm > .admonition-title::after {
+    content: "\f051";
+    color: var(--black);
+  }
+  
+  body.custom-style-enabled div.algorithm {
+    border-color: var(--black);
+    background-color: var(--black-min);
+  }
+  
+  body.custom-style-enabled div.algorithm > .admonition-title {
+    background-color: var(--black-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.bonus {
+    border-color: var(--gray);
+    background-color: var(--gray-min);
+  }
+  
+  body.custom-style-enabled div.admonition.bonus > .admonition-title {
+    background-color: var(--gray-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.bonus > .admonition-title::after {
+    content: "\f06b";
+    color: var(--gray);
+  }
+  
+  body.custom-style-enabled div.admonition.caution, div.admonition.warning, div.admonition.attention, div.admonition.important {
+    border-color: var(--orange);
+    background-color: var(--orange-min);
+  }
+  
+  body.custom-style-enabled div.admonition.caution > .admonition-title,
+   body.custom-style-enabled div.admonition.warning > .admonition-title,
+    body.custom-style-enabled div.admonition.attention > .admonition-title,
+     body.custom-style-enabled div.admonition.important > .admonition-title {
+    background-color: var(--orange-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.caution > .admonition-title::after,
+   body.custom-style-enabled div.admonition.warning > .admonition-title::after,
+    body.custom-style-enabled div.admonition.attention > .admonition-title::after,
+     body.custom-style-enabled div.admonition.important > .admonition-title::after {
+    color: var(--orange);
+  }
+  
+  body.custom-style-enabled div.admonition.danger, 
+  body.custom-style-enabled div.admonition.error {
+    border-color: var(--red);
+    background-color: var(--red-min);
+  }
+  
+  body.custom-style-enabled div.admonition.danger > .admonition-title,
+   body.custom-style-enabled div.admonition.error > .admonition-title {
+    background-color: var(--red-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.danger > .admonition-title::after,
+   body.custom-style-enabled div.admonition.error > .admonition-title::after {
+    color: var(--red);
+  }
+  
+  body.custom-style-enabled div.admonition.hint, 
+  body.custom-style-enabled div.admonition.note, 
+  body.custom-style-enabled div.admonition.seealso, 
+  body.custom-style-enabled div.admonition.tip, 
+  body.custom-style-enabled div.admonition.remark, 
+  body.custom-style-enabled div.admonition.observation {
+    border-color: var(--green);
+    background-color: var(--green-min);
+  }
+  
+  body.custom-style-enabled div.admonition.hint > .admonition-title,
+   body.custom-style-enabled div.admonition.note > .admonition-title,
+    body.custom-style-enabled div.admonition.seealso > .admonition-title,
+     body.custom-style-enabled div.admonition.tip > .admonition-title,
+      body.custom-style-enabled div.admonition.remark > .admonition-title,
+      body.custom-style-enabled div.admonition.observation > .admonition-title  {
+    background-color: var(--green-mid);
+  }
+  
+  body.custom-style-enabled div.admonition.hint > .admonition-title::after,
+   body.custom-style-enabled div.admonition.note > .admonition-title::after,
+    body.custom-style-enabled div.admonition.seealso > .admonition-title::after,
+     body.custom-style-enabled div.admonition.tip > .admonition-title::after,
+     body.custom-style-enabled div.admonition.remark > .admonition-title::after,
+     body.custom-style-enabled div.admonition.observation > .admonition-title::after {
+    color: var(--green);
+    content: "\f249";
+  }
+
+  #toggle-css{
+    color: var(--gray) !important;
+  }
+
+  body.custom-style-enabled #toggle-css{
+    color: var(--black) !important;
+  }
+
+  body.custom-style-enabled #tudelft-logo{
+    opacity: 1;
+  }

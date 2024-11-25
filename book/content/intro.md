@@ -9,4 +9,9 @@ In this book, you will find:
 - Differences between the default Sphinx styling and the TU Delft theme styling.
 - Examples that demonstrate what components are available.
 
+::::::{admonition} Hint!
+:class: hint
+Click on the **TU Delft logo** on the navbar above to toggle between themes!
+::::::
+
 This book is still a work in progress. Your feedback and suggestions are welcome as we continue to develop and improve this resource.
