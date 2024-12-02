@@ -7,4 +7,5 @@ parts:
     - file: content/admonitions.md
     - file: content/proofs.md
     - file: content/exercises.md
+    - file: content/custom.md
     - file: content/credits.md

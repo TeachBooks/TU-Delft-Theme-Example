@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
         headerEnd.appendChild(button);
     }
 
-    if (localStorage.getItem("customStyle") === "enabled") {
-        enableCustomStyle();
-    }
+
+    enableCustomStyle();
+
 
     document.getElementById(toggleButtonId)?.addEventListener("click", () => {
         if (document.body.classList.contains(rootComponentClass)) {

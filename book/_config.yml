@@ -19,6 +19,10 @@ sphinx:
       use_thebe_lite: true
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
     html_theme_options:
+      logo:
+        text: TU Delft Theme
+        image_light: TUDelft_logo_descriptor_rgb.png
+        image_dark: TUDelft_logo_descriptor_white.png
       repository_url: "https://github.com/TeachBooks/TU-Delft-Theme-Example"
       path_to_docs: "book"
       repository_branch: "main"
