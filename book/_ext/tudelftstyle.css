@@ -57,7 +57,12 @@ body.custom-style-enabled .logo__title {
     --green: #6CC24A;
     --green-min: #6CC24A10;
     --green-mid: #6CC24A25;
+    --darkBlue: #0C2340;
+    --darkBlue-min: #0C234010;
+    --darkBlue-mid: #0C234025;
   }
+
+  /* BLOCK COMPONENTS (admonitions, proofs, exercises) */
   
   /* Grasple */
   body.custom-style-enabled div.grasple p.admonition-title::after {
@@ -352,4 +357,127 @@ body.custom-style-enabled .logo__title {
 
   body.custom-style-enabled #tudelft-logo{
     opacity: 1;
+  }
+
+  /* BADGES */
+
+  /* all badges */
+  body.custom-style-enabled .sd-badge {
+    padding: .35em .65em;
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: .45rem;
+  }
+
+  /* primary, info */
+  body.custom-style-enabled .sd-bg-primary,
+  body.custom-style-enabled .sd-bg-info{
+    color: #FFFFFF !important;
+    background-color: var(--blue) !important;
+  }
+  /* primary-line, info-line */
+  body.custom-style-enabled .sd-outline-primary,
+  body.custom-style-enabled .sd-outline-info{
+    color: var(--blue) !important;
+    border-color: var(--blue) !important;
+  }
+
+  /* secondary */
+  body.custom-style-enabled .sd-bg-secondary{
+    color: #FFFFFF !important;
+    background-color: var(--yellow) !important;
+  }
+  /* secondary-line */
+  body.custom-style-enabled .sd-outline-secondary{
+    color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+  }
+
+  /* success */
+  body.custom-style-enabled .sd-bg-success{
+    color: #FFFFFF !important;
+    background-color: var(--darkGreen) !important;
+  }
+  /* success-line */
+  body.custom-style-enabled .sd-outline-success{
+    color: var(--darkGreen) !important;
+    border-color: var(--darkGreen) !important;
+  }
+
+  /* warning */
+  body.custom-style-enabled .sd-bg-warning{
+    color: #FFFFFF !important;
+    background-color: var(--orange) !important;
+  }
+  /* warning-line */
+  body.custom-style-enabled .sd-outline-warning{
+    color: var(--orange) !important;
+    border-color: var(--orange) !important;
+  }
+
+  /* danger */
+  body.custom-style-enabled .sd-bg-danger{
+    color: #FFFFFF !important;
+    background-color: var(--red) !important;
+  }
+  /* danger-line */
+  body.custom-style-enabled .sd-outline-danger{
+    color: var(--red) !important;
+    border-color: var(--red) !important;
+  }
+
+  /* light */
+  body.custom-style-enabled .sd-bg-light{
+    color: var(--black) !important;
+    background-color: var(--gray-mid) !important;
+  }
+  /* light-line */
+  body.custom-style-enabled .sd-outline-light{
+    color: var(--gray) !important;
+    border-color: var(--gray) !important;
+  }
+
+  /* muted */
+  body.custom-style-enabled .sd-bg-muted{
+    color: #FFFFFF !important;
+    background-color: var(--purple) !important;
+  }
+  /* muted-line */
+  body.custom-style-enabled .sd-outline-muted{
+    color: var(--purple) !important;
+    border-color: var(--purple) !important;
+  }
+
+  /* dark */
+  body.custom-style-enabled .sd-bg-dark{
+    color: #FFFFFF !important;
+    background-color: var(--darkBlue) !important;
+  }
+  /* dark-line */
+  body.custom-style-enabled .sd-outline-dark{
+    color: var(--darkBlue) !important;
+    border-color: var(--darkBlue) !important;
+  }
+
+  /* white */
+  body.custom-style-enabled .sd-bg-white{
+    color: var(--black) !important;
+    background-color: #FFFFFF !important;
+  }
+  /* white-line */
+  body.custom-style-enabled .sd-outline-white{
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+  }
+
+  /* black */
+  body.custom-style-enabled .sd-bg-black{
+    color: #FFFFFF !important;
+    background-color: var(--black) !important;
+  }
+  /* black-line */
+  body.custom-style-enabled .sd-outline-black{
+    color: var(--black) !important;
+    border-color: var(--black) !important;
   }
