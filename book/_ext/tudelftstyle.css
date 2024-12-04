@@ -59,7 +59,7 @@ body.custom-style-enabled .logo__title {
     --green-mid: #6CC24A25;
   }
   
-  
+  /* Grasple */
   body.custom-style-enabled div.grasple p.admonition-title::after {
     content: "\f12e";
     color: var(--raspberry);
@@ -75,6 +75,7 @@ body.custom-style-enabled .logo__title {
     background-color: var(--raspberry-mid);
   }
   
+   /* Exercise */
   body.custom-style-enabled div.exercise p.admonition-title::after {
     content: "\f12e";
     color: var(--raspberry);
@@ -90,7 +91,7 @@ body.custom-style-enabled .logo__title {
     background-color: var(--raspberry-mid);
   }
   
-  
+  /* Definition */
   body.custom-style-enabled div.definition p.admonition-title::after {
     content: "\f02d";
     color: var(--blue);
@@ -102,7 +103,65 @@ body.custom-style-enabled .logo__title {
   body.custom-style-enabled div.definition > p.admonition-title {
     background-color: var(--blue-mid);
   }
+
+  /* Criterion */
+  body.custom-style-enabled div.criterion p.admonition-title::after {
+    content: "\f058";
+    color: var(--orange);
+  }
+  body.custom-style-enabled div.criterion {
+    border-color: var(--orange);
+    background-color: var(--orange-min);
+  }
+  body.custom-style-enabled div.criterion > p.admonition-title {
+    background-color: var(--orange-mid);
+  }
   
+  /* Axiom, Lemma, Conjecture */
+  body.custom-style-enabled div.axiom  p.admonition-title::after,
+  body.custom-style-enabled div.lemma  p.admonition-title::after,
+  body.custom-style-enabled div.conjecture  p.admonition-title::after {
+    content: "\f0e3";
+    color: var(--yellow);
+  }
+  body.custom-style-enabled div.axiom, 
+  body.custom-style-enabled div.lemma, 
+  body.custom-style-enabled div.conjecture{
+    border-color: var(--yellow);
+    background-color: var(--yellow-min);
+  }
+  body.custom-style-enabled div.axiom > p.admonition-title,
+  body.custom-style-enabled div.lemma > p.admonition-title,
+  body.custom-style-enabled div.conjecture > p.admonition-title{
+    background-color: var(--yellow-mid);
+  }
+
+  /* Property */
+  body.custom-style-enabled div.property  p.admonition-title::after {
+    content: "\f02b";
+    color: var(--orange);
+  }
+  body.custom-style-enabled div.property{
+    border-color: var(--orange);
+    background-color: var(--orange-min);
+  }
+  body.custom-style-enabled div.property > p.admonition-title{
+    background-color: var(--orange-mid);
+  }
+
+  /* Assumption */
+  body.custom-style-enabled div.assumption  p.admonition-title::after {
+    color: var(--yellow);
+  }
+  body.custom-style-enabled div.assumption{
+    border-color: var(--yellow);
+    background-color: var(--yellow-min);
+  }
+  body.custom-style-enabled div.assumption > p.admonition-title{
+    background-color: var(--yellow-mid);
+  }
+
+  /* Theorem, Preposition, Corollary */
   body.custom-style-enabled div.theorem  p.admonition-title::after,
   body.custom-style-enabled div.proposition p.admonition-title::after,
   body.custom-style-enabled div.corollary p.admonition-title::after {
@@ -121,6 +180,7 @@ body.custom-style-enabled .logo__title {
     background-color: var(--darkGreen-mid);
   }
   
+  /* Example */
   body.custom-style-enabled div.example {
     border-color: var(--yellow);
     background-color: var(--yellow-min);
@@ -135,75 +195,72 @@ body.custom-style-enabled .logo__title {
     color: var(--yellow);
   }
   
+  /* Solution */
   body.custom-style-enabled div.admonition.solution {
     border-color: var(--purple);
     background-color: var(--purple-min);
   }
-  
   body.custom-style-enabled div.admonition.solution > .admonition-title {
     background-color: var(--purple-mid);
     /* color: white; */
   }
-  
   body.custom-style-enabled div.admonition.solution > .admonition-title::after {
     content: "\e5a0";
     color: var(--purple);
   }
   
-  body.custom-style-enabled div.admonition.myproof {
+  /* TU Delft Proof */
+  body.custom-style-enabled div.admonition.tudproof {
     border-color: var(--darkGreen);
     background-color: var(--gray-min);
   }
-  
-  body.custom-style-enabled div.admonition.myproof > .admonition-title {
+  body.custom-style-enabled div.admonition.tudproof > .admonition-title {
     background-color: var(--gray-mid);
   }
-  
-  body.custom-style-enabled div.admonition.myproof > .admonition-title::after {
+  body.custom-style-enabled div.admonition.tudproof > .admonition-title::after {
     content: "\f51c";
     color: var(--gray);
   }
   
+  /* Algorithm */
   body.custom-style-enabled div.algorithm > .admonition-title::after {
-    content: "\f051";
-    color: var(--black);
+    content: "\f120";
+    color: var(--blue);
   }
-  
   body.custom-style-enabled div.algorithm {
-    border-color: var(--black);
-    background-color: var(--black-min);
+    border-color: var(--blue);
+    background-color: var(--blue-min);
   }
-  
   body.custom-style-enabled div.algorithm > .admonition-title {
-    background-color: var(--black-mid);
+    background-color: var(--blue-mid);
+    border-top: .15rem solid var(--blue-mid);
+    border-bottom: .15rem solid var(--blue-mid);
   }
   
+  /* Bonus */
   body.custom-style-enabled div.admonition.bonus {
     border-color: var(--gray);
     background-color: var(--gray-min);
   }
-  
   body.custom-style-enabled div.admonition.bonus > .admonition-title {
     background-color: var(--gray-mid);
   }
-  
   body.custom-style-enabled div.admonition.bonus > .admonition-title::after {
     content: "\f06b";
     color: var(--gray);
   }
   
-  body.custom-style-enabled div.admonition.caution, div.admonition.warning, div.admonition.attention, div.admonition.important {
+  /* Caution, Warning, Attention, Important */
+  body.custom-style-enabled div.admonition.caution, body.custom-style-enabled div.admonition.warning, body.custom-style-enabled div.admonition.attention, body.custom-style-enabled div.admonition.important {
     border-color: var(--orange);
     background-color: var(--orange-min);
   }
-  
   body.custom-style-enabled div.admonition.caution > .admonition-title,
    body.custom-style-enabled div.admonition.warning > .admonition-title,
     body.custom-style-enabled div.admonition.attention > .admonition-title,
      body.custom-style-enabled div.admonition.important > .admonition-title {
     background-color: var(--orange-mid);
   }
-  
   body.custom-style-enabled div.admonition.caution > .admonition-title::after,
    body.custom-style-enabled div.admonition.warning > .admonition-title::after,
     body.custom-style-enabled div.admonition.attention > .admonition-title::after,
@@ -211,22 +268,22 @@ body.custom-style-enabled .logo__title {
     color: var(--orange);
   }
   
+  /* Danger, Error */
   body.custom-style-enabled div.admonition.danger, 
   body.custom-style-enabled div.admonition.error {
     border-color: var(--red);
     background-color: var(--red-min);
   }
-  
   body.custom-style-enabled div.admonition.danger > .admonition-title,
    body.custom-style-enabled div.admonition.error > .admonition-title {
     background-color: var(--red-mid);
   }
-  
   body.custom-style-enabled div.admonition.danger > .admonition-title::after,
    body.custom-style-enabled div.admonition.error > .admonition-title::after {
     color: var(--red);
   }
-  
+
+  /* Hint, Note, SeeAlso, Tip, Remark, Observation */
   body.custom-style-enabled div.admonition.hint, 
   body.custom-style-enabled div.admonition.note, 
   body.custom-style-enabled div.admonition.seealso, 
@@ -236,7 +293,6 @@ body.custom-style-enabled .logo__title {
     border-color: var(--green);
     background-color: var(--green-min);
   }
-  
   body.custom-style-enabled div.admonition.hint > .admonition-title,
    body.custom-style-enabled div.admonition.note > .admonition-title,
     body.custom-style-enabled div.admonition.seealso > .admonition-title,
@@ -245,7 +301,6 @@ body.custom-style-enabled .logo__title {
       body.custom-style-enabled div.admonition.observation > .admonition-title  {
     background-color: var(--green-mid);
   }
-  
   body.custom-style-enabled div.admonition.hint > .admonition-title::after,
    body.custom-style-enabled div.admonition.note > .admonition-title::after,
     body.custom-style-enabled div.admonition.seealso > .admonition-title::after,
@@ -253,7 +308,38 @@ body.custom-style-enabled .logo__title {
      body.custom-style-enabled div.admonition.remark > .admonition-title::after,
      body.custom-style-enabled div.admonition.observation > .admonition-title::after {
     color: var(--green);
-    content: "\f249";
+  }
+
+  /* Topic */
+  body.custom-style-enabled aside.topic {
+    background-color: var(--gray-mid);
+  }
+
+  /* Version Added */
+  body.custom-style-enabled div.versionadded {
+    border-color: var(--darkGreen);
+    background-color: var(--darkGreen-mid);
+  }
+  body.custom-style-enabled div.versionadded .versionmodified.added::before {
+    color: var(--darkGreen);
+  }
+
+  /* Version Changed */
+  body.custom-style-enabled div.versionchanged {
+    border-color: var(--orange);
+    background-color: var(--orange-mid);
+  }
+  body.custom-style-enabled div.versionchanged .versionmodified.changed::before {
+    color: var(--orange);
+  }
+
+  /* Version Deprecated */
+  body.custom-style-enabled div.deprecated {
+    border-color: var(--red);
+    background-color: var(--red-mid);
+  }
+  body.custom-style-enabled div.deprecated .versionmodified.deprecated::before {
+    color: var(--red);
   }
 
   #toggle-css{

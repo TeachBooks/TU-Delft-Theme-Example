@@ -401,7 +401,7 @@ To hide the directive, simply add `:class: dropdown` as a directive option.
 This is an example of how to hide the content of a directive.
 ::::::
 
-````
+````md
 ::::::{prf:theorem}
 :class: dropdown
 This is an example of how to hide the content of a directive.

@@ -33,14 +33,14 @@ The solution to $x^2 - 4 = 0$ is $x = \pm 2$.
 ::::::
 ```
 
-## `:class: myproof`
+## `:class: tudproof`
 ::::::{admonition} Proof of the Pythagorean theorem
-:class: myproof
+:class: tudproof
 By the Pythagorean theorem, in a right triangle with sides $a$ and $b$ and hypotenuse $c$, $a^2 + b^2 = c^2$.
 ::::::
 ```
 ::::::{admonition} Proof of the Pythagorean theorem
-:class: myproof
+:class: tudproof
 By the Pythagorean theorem, in a right triangle with sides $a$ and $b$ and hypotenuse $c$, $a^2 + b^2 = c^2$.
 ::::::
 ```
