@@ -9,4 +9,5 @@ parts:
     - file: content/exercises.md
     - file: content/custom.md
     - file: content/badges.md
+    - file: content/buttons.md
     - file: content/credits.md
