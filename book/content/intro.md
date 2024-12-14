@@ -1,13 +1,21 @@
 (intro)=
 # TU Delft Theme Example Book
 
-This book aims to present the style changes applied by the Sphinx TU Delft theme extension. It demonstrates examples of components such as admonitions, proofs, and exercises, showcasing their appearance with and without the TU Delft theme styling. The goal is to help the reader understand how the TU Delft theme looks like when applied to educational content.
+This book aims to present the style changes applied by the Sphinx TU Delft theme extension. It demonstrates examples of the following components:
+- admonitions (e.g. hint, note, tip, error, etc.), 
+- proofs (e.g. theorem, axiom, lemma, corllary, etc.), 
+- exercises, 
+- buttons, 
+- badges,
+- custom components.
+
+We understand that the names above are very vague, therefore it is recommended to visit every section one by one and learn what these components represent visually. The book showcases their appearance with and without the TU Delft theme styling. The goal is to help the reader understand how the TU Delft theme looks like when applied to educational content.
 
 In this book, you will find:
 
-- Explanations of how to use various components like admonitions, proofs, exercises, and more.
-- Differences between the default Sphinx styling and the TU Delft theme styling.
-- Examples that demonstrate what components are available.
+- **Explanations** of how to use various components like admonitions, buttons, and more.
+- **Differences** between the default Sphinx styling and the TU Delft theme styling.
+- **Examples** that demonstrate what components are available.
 
 ::::::{admonition} Hint!
 :class: hint
