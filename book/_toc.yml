@@ -10,4 +10,5 @@ parts:
     - file: content/custom.md
     - file: content/badges.md
     - file: content/buttons.md
+    - file: content/latex.md
     - file: content/credits.md

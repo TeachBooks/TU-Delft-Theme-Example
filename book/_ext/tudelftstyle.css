@@ -621,3 +621,16 @@ body.custom-style-enabled .logo__title {
     background-color: var(--black) !important;
     border-color: var(--black) !important;
   }
+
+body.custom-style-enabled .red {color: var(--red);}
+body.custom-style-enabled .blue {color: var(--blue);}
+body.custom-style-enabled .green {color: var(--green);}
+body.custom-style-enabled .raspberry {color: var(--raspberry);}
+body.custom-style-enabled .yellow {color: var(--yellow);}
+body.custom-style-enabled .darkGreen {color: var(--darkGreen);}
+body.custom-style-enabled .orange {color: var(--orange);}
+body.custom-style-enabled .cyan {color: var(--cyan);}
+body.custom-style-enabled .gray {color: var(--gray);}
+body.custom-style-enabled .purple {color: var(--purple);}
+body.custom-style-enabled .pink {color: var(--pink);}
+body.custom-style-enabled .darkBlue {color: var(--darkBlue);}
