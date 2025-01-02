@@ -37,123 +37,121 @@ It's got a certain charm to it.
 
 ## `attention`
 
-::::::{attention} Attention
+::::::{attention}
 Climate change is real.
 ::::::
 ```text
-::::::{attention} Attention
+::::::{attention}
 Climate change is real.
 ::::::
 ```
 
 ## `caution`
 
-::::::{caution} Caution
+::::::{caution}
 Cliff ahead: Don't drive off it.
 ::::::
 ```text
-::::::{caution} Caution
+::::::{caution}
 Cliff ahead: Don't drive off it.
 ::::::
 ```
 
 ## `danger`
 
-::::::{danger} Danger
+::::::{danger}
 Mad scientist at work!
 ::::::
 ```text
-::::::{danger} Danger
+::::::{danger}
 Mad scientist at work!
 ::::::
 ```
 
 ## `error`
 
-::::::{error} Error
+::::::{error}
 Does not compute.
 ::::::
 ```text
-::::::{error} Error
+::::::{error}
 Does not compute.
 ::::::
 ```
 
 ## `hint`
 
-::::::{hint} Hint
+::::::{hint}
 Insulators insulate, until they are subject to ______ voltage.
 ::::::
 ```text
-::::::{hint} Hint
+::::::{hint}
 Insulators insulate, until they are subject to ______ voltage.
 ::::::
 ```
 
 ## `important`
 
-::::::{important} Important
+::::::{important}
 Tech is not neutral, nor is it apolitical.
 ::::::
 ```text
-::::::{important} Important
+::::::{important}
 Tech is not neutral, nor is it apolitical.
 ::::::
 ```
 
 ## `note`
 
-::::::{note} Note
+::::::{note}
 This is a note.
 ::::::
 ```text
-::::::{note} Note
+::::::{note}
 This is a note.
 ::::::
 ```
 
 ## `seealso`
 
-::::::{seealso} See Also
+::::::{seealso}
 Other relevant information.
 ::::::
 ```text
-::::::{seealso} See Also
+::::::{seealso}
 Other relevant information.
 ::::::
 ```
 
 ## `tip`
 
-::::::{tip} Tip
+::::::{tip}
 25% if the service is good.
 ::::::
 ```text
-::::::{tip} Tip
+::::::{tip}
 25% if the service is good.
 ::::::
 ```
 
 ## `warning`
 
-::::::{warning} Warning
+::::::{warning}
 Reader discretion is strongly advised.
 ::::::
 ```text
-::::::{warning} Warning
+::::::{warning}
 Reader discretion is strongly advised.
 ::::::
 ```
 
 ## `versionadded`
 
-::::::{versionadded} Version Added
-**v0.1.1**  
+::::::{versionadded} v0.1.1
 Here's a version added message.
 ::::::
 ```text
-::::::{versionadded} Version Added
-**v0.1.1**  
+::::::{versionadded} v0.1.1
 Here's a version added message.
 ::::::
 ```
@@ -165,21 +163,18 @@ Here's a version added message.
 Here's a version changed message.
 ::::::
 ```text
-::::::{versionchanged} Version Changed
-**v0.1.1**  
+::::::{versionchanged} v0.1.1
 Here's a version changed message.
 ::::::
 ```
 
 ## `deprecated`
 
-::::::{deprecated} Deprecated
-**v0.1.1**  
+::::::{deprecated} v0.1.1
 Here's a deprecation message.
 ::::::
 ```text
-::::::{deprecated} Deprecated
-**v0.1.1**  
+::::::{deprecated} v0.1.1  
 Here's a deprecation message.
 ::::::
 ```
