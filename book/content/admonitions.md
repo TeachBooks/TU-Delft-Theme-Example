@@ -148,12 +148,10 @@ Reader discretion is strongly advised.
 ## `versionadded`
 
 ::::::{versionadded} v0.1.1
-
 Here's a version added message.
 ::::::
 ```text
 ::::::{versionadded} v0.1.1
-
 Here's a version added message.
 ::::::
 ```
@@ -161,12 +159,10 @@ Here's a version added message.
 ## `versionchanged`
 
 ::::::{versionchanged} v0.1.1
-
 Here's a version changed message.
 ::::::
 ```text
 ::::::{versionchanged} v0.1.1
-
 Here's a version changed message.
 ::::::
 ```
@@ -174,12 +170,10 @@ Here's a version changed message.
 ## `deprecated`
 
 ::::::{deprecated} v0.1.1
-
 Here's a deprecation message.
 ::::::
 ```text
 ::::::{deprecated} v0.1.1
-
 Here's a deprecation message.
 ::::::
 ```
