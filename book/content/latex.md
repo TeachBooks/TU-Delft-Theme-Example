@@ -3,18 +3,18 @@
 
 To obtain pretty colors in $\LaTeX$ we define several color classes, being
 
-- red
-- blue
-- green
-- raspberry
-- yellow
-- darkGreen
-- orange
-- cyan
-- gray
-- purple
-- pink
-- darkBlue
+- tud-red
+- tud-blue
+- tud-green
+- tud-raspberry
+- tud-yellow
+- tud-darkGreen
+- tud-orange
+- tud-cyan
+- tud-gray
+- tud-purple
+- tud-pink
+- tud-darkBlue
 
 so that in $\LaTeX$ we can use the code
 
