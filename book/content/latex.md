@@ -29,7 +29,7 @@ to obtain $\LaTeX$ that is rendered in the color `<color>`.
 ```text
 :::::{math}
 
-\class{raspberry}{\LaTeX}
+\class{tud-raspberry}{\LaTeX}
 
 :::::
 ````
@@ -38,7 +38,7 @@ renders as
 
 :::::{math}
 
-\class{raspberry}{\LaTeX}
+\class{tud-raspberry}{\LaTeX}
 
 :::::
 
