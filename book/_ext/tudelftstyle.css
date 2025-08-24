@@ -1,680 +1,780 @@
 body.custom-style-enabled {
   font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 @font-face {
   font-family: 'RobotoSlab';
   src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
- 
-body.custom-style-enabled h1, 
-body.custom-style-enabled h2, 
-body.custom-style-enabled h3, 
-body.custom-style-enabled h4, 
-body.custom-style-enabled h5, 
+
+body.custom-style-enabled h1,
+body.custom-style-enabled h2,
+body.custom-style-enabled h3,
+body.custom-style-enabled h4,
+body.custom-style-enabled h5,
 body.custom-style-enabled h6 {
   font-family: RobotoSlab, Arial;
 }
- 
+
 body.custom-style-enabled .logo__title {
   font-family: RobotoSlab, Arial !important;
 }
 
 :root {
-    --tud-raspberry: rgb(165,0,52);
-    --tud-raspberry-min: rgb(165,0,52,3%);
-    --tud-raspberry-mid: rgb(165,0,52,20%);
-    --tud-yellow: #FFB81C;
-    --tud-yellow-min: #FFB81C05;
-    --tud-yellow-mid: #FFB81C20;
-    --tud-darkGreen: #009B77;
-    --tud-darkGreen-min: #009B7710;
-    --tud-darkGreen-mid: #009B7725;
-    --tud-blue: #0076C2;
-    --tud-blue-min: #0076C210;
-    --tud-blue-mid: #0076C225;
-    --tud-black: var(--pst-color-text-base);
-    --tud-black-min: #56565605;
-    --tud-black-mid: #56565625;
-    --tud-orange: #EC6842;
-    --tud-orange-min: #EC684210;
-    --tud-orange-mid: #EC684225;
-    --tud-cyan: #00A6D6;
-    --tud-cyan-min: #00A6D610;
-    --tud-cyan-mid: #00A6D625;
-    --tud-gray: #7d7d7d;
-    --tud-gray-min: #7d7d7d05;
-    --tud-gray-mid: #7d7d7d20;
-    --tud-purple: #6f1d77;
-    --tud-purple-min: #6f1d7705;
-    --tud-purple-mid: #6f1d7720;
-    --tud-pink: #EF60A3;
-    --tud-pink-min: #EF60A310;
-    --tud-pink-mid: #EF60A325;
-    --tud-red: #E03C31;
-    --tud-red-min: #E03C3110;
-    --tud-red-mid: #E03C3125;
-    --tud-green: #6CC24A;
-    --tud-green-min: #6CC24A10;
-    --tud-green-mid: #6CC24A25;
-    --tud-darkBlue: #0C2340;
-    --tud-darkBlue-min: #0C234010;
-    --tud-darkBlue-mid: #0C234025;
-  }
+  --tud-raspberry: rgb(165, 0, 52);
+  --tud-raspberry-min: rgb(165, 0, 52, 3%);
+  --tud-raspberry-mid: rgb(165, 0, 52, 20%);
+  --tud-yellow: #FFB81C;
+  --tud-yellow-min: #FFB81C05;
+  --tud-yellow-mid: #FFB81C20;
+  --tud-darkGreen: #009B77;
+  --tud-darkGreen-min: #009B7710;
+  --tud-darkGreen-mid: #009B7725;
+  --tud-blue: #0076C2;
+  --tud-blue-min: #0076C210;
+  --tud-blue-mid: #0076C225;
+  --tud-black: var(--pst-color-text-base);
+  --tud-black-min: #56565605;
+  --tud-black-mid: #56565625;
+  --tud-orange: #EC6842;
+  --tud-orange-min: #EC684210;
+  --tud-orange-mid: #EC684225;
+  --tud-cyan: #00A6D6;
+  --tud-cyan-min: #00A6D610;
+  --tud-cyan-mid: #00A6D625;
+  --tud-gray: #7d7d7d;
+  --tud-gray-min: #7d7d7d05;
+  --tud-gray-mid: #7d7d7d20;
+  --tud-purple: #6f1d77;
+  --tud-purple-min: #6f1d7705;
+  --tud-purple-mid: #6f1d7720;
+  --tud-pink: #EF60A3;
+  --tud-pink-min: #EF60A310;
+  --tud-pink-mid: #EF60A325;
+  --tud-red: #E03C31;
+  --tud-red-min: #E03C3110;
+  --tud-red-mid: #E03C3125;
+  --tud-green: #6CC24A;
+  --tud-green-min: #6CC24A10;
+  --tud-green-mid: #6CC24A25;
+  --tud-darkBlue: #0C2340;
+  --tud-darkBlue-min: #0C234010;
+  --tud-darkBlue-mid: #0C234025;
+}
 
-  html[data-theme="dark"] {
-    --tud-raspberry: #ffa7f5;
-    --tud-raspberry-min: #ffa7f520;
-    --tud-raspberry-mid: #ffa7f540;
-    --tud-yellow: #a43a00;
-    --tud-yellow-min: #a43a0020;
-    --tud-yellow-mid: #a43a0040;
-    --tud-darkGreen: #00bd87;
-    --tud-darkGreen-min: #00bd8720;
-    --tud-darkGreen-mid: #00bd8740;
-    --tud-blue: #09baff;
-    --tud-blue-min: #09baff20;
-    --tud-blue-mid: #09baff40;
-    --tud-orange: #ff581f;
-    --tud-orange-min: #ff581f20;
-    --tud-orange-mid: #ff581f40;
-    --tud-cyan: #00a7ef;
-    --tud-cyan-min: #00a7ef20;
-    --tud-cyan-mid: #00a7ef40;
-    --tud-gray: #828282;
-    --tud-gray-min: #82828220;
-    --tud-gray-mid: #82828240;
-    --tud-purple: #bc5db0;
-    --tud-purple-min: #bc5db020;
-    --tud-purple-mid: #bc5db040;
-    --tud-pink: #ff47ab;
-    --tud-pink-min: #ff47ab20;
-    --tud-pink-mid: #ff47ab40;
-    --tud-red: #ff7161;
-    --tud-red-min: #ff716120;
-    --tud-red-mid: #ff716140;
-    --tud-green: #008000;
-    --tud-green-min: #00800020;
-    --tud-green-mid: #00800040;
-    --tud-darkBlue: #c1e3ff;
-    --tud-darkBlue-min: #c1e3ff20;
-    --tud-darkBlue-mid: #c1e3ff40;
-  }
+html[data-theme="dark"] {
+  --tud-raspberry: #ffa7f5;
+  --tud-raspberry-min: #ffa7f520;
+  --tud-raspberry-mid: #ffa7f540;
+  --tud-yellow: #a43a00;
+  --tud-yellow-min: #a43a0020;
+  --tud-yellow-mid: #a43a0040;
+  --tud-darkGreen: #00bd87;
+  --tud-darkGreen-min: #00bd8720;
+  --tud-darkGreen-mid: #00bd8740;
+  --tud-blue: #09baff;
+  --tud-blue-min: #09baff20;
+  --tud-blue-mid: #09baff40;
+  --tud-orange: #ff581f;
+  --tud-orange-min: #ff581f20;
+  --tud-orange-mid: #ff581f40;
+  --tud-cyan: #00a7ef;
+  --tud-cyan-min: #00a7ef20;
+  --tud-cyan-mid: #00a7ef40;
+  --tud-gray: #828282;
+  --tud-gray-min: #82828220;
+  --tud-gray-mid: #82828240;
+  --tud-purple: #bc5db0;
+  --tud-purple-min: #bc5db020;
+  --tud-purple-mid: #bc5db040;
+  --tud-pink: #ff47ab;
+  --tud-pink-min: #ff47ab20;
+  --tud-pink-mid: #ff47ab40;
+  --tud-red: #ff7161;
+  --tud-red-min: #ff716120;
+  --tud-red-mid: #ff716140;
+  --tud-green: #008000;
+  --tud-green-min: #00800020;
+  --tud-green-mid: #00800040;
+  --tud-darkBlue: #c1e3ff;
+  --tud-darkBlue-min: #c1e3ff20;
+  --tud-darkBlue-mid: #c1e3ff40;
+}
 
-  html body.custom-style-enabled {
-    --pst-color-primary: var(--tud-cyan) !important;
-    --pst-color-secondary: var(--tud-green) !important;
-    --pst-color-table-row-hover-bg: var(--tud-raspberry-mid) !important;
-    --pst-color-warning: var(--tud-orange) !important;
-    --pst-color-accent: var(--tud-cyan) !important;
-    --pst-color-accent-bg: var(--tud-cyan-min) !important;
-    --pst-color-inline-code: var(--tud-red) !important;
+html body.custom-style-enabled {
+  --pst-color-primary: var(--tud-cyan) !important;
+  --pst-color-secondary: var(--tud-green) !important;
+  --pst-color-table-row-hover-bg: var(--tud-raspberry-mid) !important;
+  --pst-color-warning: var(--tud-orange) !important;
+  --pst-color-accent: var(--tud-cyan) !important;
+  --pst-color-accent-bg: var(--tud-cyan-min) !important;
+  --pst-color-inline-code: var(--tud-red) !important;
 }
 
 #pst-back-to-top:hover {
-    background-color: var(--pst-color-secondary) !important;
+  background-color: var(--pst-color-secondary) !important;
 }
 
 #pst-back-to-top {
-    background-color: var(--pst-color-primary) !important;
+  background-color: var(--pst-color-primary) !important;
 }
 
 
 /* Set title to scale to max width of 100% */
 body.custom-style-enabled .title.logo__title {
-      width: 100%;
-      font-size: clamp(1rem, 4vw, 2rem);
-      text-align: center;
-      margin: 0;
-      padding: 0.5rem 0;
-    }
-  
+  width: 100%;
+  font-size: clamp(1rem, 4vw, 2rem);
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+}
 
-  /* BLOCK COMPONENTS (admonitions, proofs, exercises) */
 
-  /* Admonition */
-  body.custom-style-enabled div.admonition {
-    border-color: var(--tud-cyan);
-    background-color: var(--tud-cyan-min);
-  }
-   body.custom-style-enabled div.admonition > .admonition-title {
-    background-color: var(--tud-cyan-mid);
-  }
-   body.custom-style-enabled div.admonition > .admonition-title::after {
-    color: var(--tud-cyan);
-  }
+/* BLOCK COMPONENTS (admonitions, proofs, exercises) */
 
-   /* Attribution  */
-  body.custom-style-enabled div.attribution  {
-    border-color: var(--tud-pink);
-    background-color: var(--tud-pink-min);
-  }
-   body.custom-style-enabled div.attribution  > .admonition-title {
-    background-color: var(--tud-pink-mid);
-  }
-   body.custom-style-enabled div.attribution  > .admonition-title::after {
-    color: var(--tud-pink);
-  }
-  body.custom-style-enabled div.attribution > .admonition-title::after {
+/* Admonition */
+body.custom-style-enabled div.admonition {
+  border-color: var(--tud-cyan);
+  background-color: var(--tud-cyan-min);
+}
+
+body.custom-style-enabled div.admonition>.admonition-title {
+  background-color: var(--tud-cyan-mid);
+}
+
+body.custom-style-enabled div.admonition>.admonition-title::after {
+  color: var(--tud-cyan);
+}
+
+/* Attribution  */
+body.custom-style-enabled div.attribution {
+  border-color: var(--tud-pink);
+  background-color: var(--tud-pink-min);
+}
+
+body.custom-style-enabled div.attribution>.admonition-title {
+  background-color: var(--tud-pink-mid);
+}
+
+body.custom-style-enabled div.attribution>.admonition-title::after {
+  color: var(--tud-pink);
+}
+
+body.custom-style-enabled div.attribution>.admonition-title::after {
   content: "\f10d";
 }
 
-  /* Grasple */
-  body.custom-style-enabled div.grasple p.admonition-title::after {
-    content: "\f12e";
-    color: var(--tud-raspberry);
-  }
-  body.custom-style-enabled div.grasple p.admonition-title::before {
-    content: "";
-  }
-  body.custom-style-enabled div.grasple {
-    border-color: var(--tud-raspberry);
-    background-color: var(--tud-raspberry-min);
-  }
-  body.custom-style-enabled div.grasple > p.admonition-title {
-    background-color: var(--tud-raspberry-mid);
-  }
-  
-   /* Exercise */
-  body.custom-style-enabled div.exercise p.admonition-title::after {
-    content: "\f12e";
-    color: var(--tud-raspberry);
-  }
-  body.custom-style-enabled div.exercise p.admonition-title::before {
-    content: "";
-  }
-  body.custom-style-enabled div.exercise {
-    border-color: var(--tud-raspberry);
-    background-color: var(--tud-raspberry-min);
-  }
-  body.custom-style-enabled div.exercise > p.admonition-title {
-    background-color: var(--tud-raspberry-mid);
-  }
-  
-  /* Definition */
-  body.custom-style-enabled div.definition p.admonition-title::after {
-    content: "\f02d";
-    color: var(--tud-blue);
-  }
-  body.custom-style-enabled div.definition {
-    border-color: var(--tud-blue);
-    background-color: var(--tud-blue-min);
-  }
-  body.custom-style-enabled div.definition > p.admonition-title {
-    background-color: var(--tud-blue-mid);
-  }
-  
-  /* Axiom, Conjecture, Assumption */
-  body.custom-style-enabled div.axiom  p.admonition-title::after,
-  body.custom-style-enabled div.assumption  p.admonition-title::after,
-  body.custom-style-enabled div.conjecture  p.admonition-title::after {
-    content: "\f19c";
-    color: var(--tud-red);
-  }
-  body.custom-style-enabled div.axiom, 
-  body.custom-style-enabled div.assumption,
-  body.custom-style-enabled div.conjecture{
-    border-color: var(--tud-red);
-    background-color: var(--tud-red-min);
-  }
-  body.custom-style-enabled div.axiom > p.admonition-title,
-  body.custom-style-enabled div.assumption > p.admonition-title,
-  body.custom-style-enabled div.conjecture > p.admonition-title{
-    background-color: var(--tud-red-mid);
-  }
+/* Grasple */
+body.custom-style-enabled div.grasple p.admonition-title::after {
+  content: "\f12e";
+  color: var(--tud-raspberry);
+}
 
-  /* Property, Observation */
-  body.custom-style-enabled div.property  p.admonition-title::after,
-  body.custom-style-enabled div.admonition.observation > .admonition-title::after {
-    content: "\f02b";
-    color: var(--tud-orange);
-  }
-  body.custom-style-enabled div.property,
-  body.custom-style-enabled div.admonition.observation{
-    border-color: var(--tud-orange);
-    background-color: var(--tud-orange-min);
-  }
-  body.custom-style-enabled div.property > p.admonition-title,
-  body.custom-style-enabled div.admonition.observation > .admonition-title{
-    background-color: var(--tud-orange-mid);
-  }
+body.custom-style-enabled div.grasple p.admonition-title::before {
+  content: "";
+}
 
-  /* Theorem, Lemma, Preposition, Corollary, Criterion  */
-  body.custom-style-enabled div.theorem  p.admonition-title::after,
-  body.custom-style-enabled div.criterion p.admonition-title::after,
-  body.custom-style-enabled div.lemma  p.admonition-title::after,
-  body.custom-style-enabled div.proposition p.admonition-title::after,
-  body.custom-style-enabled div.corollary p.admonition-title::after {
-    content: "\f51b";
-    color: var(--tud-darkGreen);
-  }
-  body.custom-style-enabled div.theorem, 
-  body.custom-style-enabled div.criterion,
-  body.custom-style-enabled div.lemma,
-  body.custom-style-enabled div.proposition, 
-  body.custom-style-enabled div.corollary {
-    border-color: var(--tud-darkGreen);
-    background-color: var(--tud-darkGreen-min);
-  }
-  body.custom-style-enabled div.theorem > p.admonition-title,
-  body.custom-style-enabled div.criterion > p.admonition-title,
-  body.custom-style-enabled div.lemma > p.admonition-title,
-   body.custom-style-enabled div.proposition > p.admonition-title,
-   body.custom-style-enabled div.corollary >p.admonition-title {
-    background-color: var(--tud-darkGreen-mid);
-  }
-  
-  /* Example */
-  body.custom-style-enabled div.example {
-    border-color: var(--tud-yellow);
-    background-color: var(--tud-yellow-min);
-  }
-  body.custom-style-enabled div.example > p.admonition-title {
-    background-color: var(--tud-yellow-mid);
-    /* color: white; */
-  }
-  body.custom-style-enabled div.example p.admonition-title::after {
-    content: "\f002";
-    transform: scale(-1, 1);
-    color: var(--tud-yellow);
-  }
-  
-  /* Solution */
-  body.custom-style-enabled div.admonition.solution {
-    border-color: var(--tud-purple);
-    background-color: var(--tud-purple-min);
-  }
-  body.custom-style-enabled div.admonition.solution > .admonition-title {
-    background-color: var(--tud-purple-mid);
-  }
-  body.custom-style-enabled div.admonition.solution > .admonition-title::after {
-    content: "\e5a0";
-    color: var(--tud-purple);
-  }
-  
-  /* TU Delft Proof */
-  body.custom-style-enabled div.admonition.tudproof {
-    border-color: var(--tud-darkGreen);
-    background-color: var(--tud-gray-min);
-  }
-  body.custom-style-enabled div.admonition.tudproof > .admonition-title {
-    background-color: var(--tud-gray-mid);
-  }
-  body.custom-style-enabled div.admonition.tudproof > .admonition-title::after {
-    content: "\f51c";
-    color: var(--tud-gray);
-  }
-  
-  /* Algorithm */
-  body.custom-style-enabled div.algorithm > .admonition-title::after {
-    content: "\f051";
-    color: var(--tud-darkBlue);
-  }
-  body.custom-style-enabled div.algorithm {
-    border-color: var(--tud-darkBlue);
-    background-color: var(--tud-darkBlue-min);
-  }
-  body.custom-style-enabled div.algorithm > .admonition-title {
-    background-color: var(--tud-darkBlue-mid);
-    border-top: .15rem solid var(--tud-darkBlue-mid);
-    border-bottom: .15rem solid var(--tud-darkBlue-mid);
-  }
-  
-  /* Bonus */
-  body.custom-style-enabled div.admonition.bonus {
-    border-color: var(--tud-gray);
-    background-color: var(--tud-gray-min);
-  }
-  body.custom-style-enabled div.admonition.bonus > .admonition-title {
-    background-color: var(--tud-gray-mid);
-  }
-  body.custom-style-enabled div.admonition.bonus > .admonition-title::after {
-    content: "\f06b";
-    color: var(--tud-gray);
-  }
-  
-  /* Caution, Warning, Attention, Important */
-  body.custom-style-enabled div.admonition.caution, body.custom-style-enabled div.admonition.warning, body.custom-style-enabled div.admonition.attention, body.custom-style-enabled div.admonition.important {
-    border-color: var(--tud-orange);
-    background-color: var(--tud-orange-min);
-  }
-  body.custom-style-enabled div.admonition.caution > .admonition-title,
-   body.custom-style-enabled div.admonition.warning > .admonition-title,
-    body.custom-style-enabled div.admonition.attention > .admonition-title,
-     body.custom-style-enabled div.admonition.important > .admonition-title {
-    background-color: var(--tud-orange-mid);
-  }
-  body.custom-style-enabled div.admonition.caution > .admonition-title::after,
-   body.custom-style-enabled div.admonition.warning > .admonition-title::after,
-    body.custom-style-enabled div.admonition.attention > .admonition-title::after,
-     body.custom-style-enabled div.admonition.important > .admonition-title::after {
-    color: var(--tud-orange);
-  }
-  
-  /* Danger, Error */
-  body.custom-style-enabled div.admonition.danger, 
-  body.custom-style-enabled div.admonition.error {
-    border-color: var(--tud-red);
-    background-color: var(--tud-red-min);
-  }
-  body.custom-style-enabled div.admonition.danger > .admonition-title,
-   body.custom-style-enabled div.admonition.error > .admonition-title {
-    background-color: var(--tud-red-mid);
-  }
-  body.custom-style-enabled div.admonition.danger > .admonition-title::after,
-   body.custom-style-enabled div.admonition.error > .admonition-title::after {
-    color: var(--tud-red);
-  }
+body.custom-style-enabled div.grasple {
+  border-color: var(--tud-raspberry);
+  background-color: var(--tud-raspberry-min);
+}
 
-  /* Hint, Note, SeeAlso, Tip, Remark */
-  body.custom-style-enabled div.admonition.hint, 
-  body.custom-style-enabled div.admonition.note, 
-  body.custom-style-enabled div.admonition.seealso, 
-  body.custom-style-enabled div.admonition.tip, 
-  body.custom-style-enabled div.admonition.remark {
-    border-color: var(--tud-green);
-    background-color: var(--tud-green-min);
-  }
-  body.custom-style-enabled div.admonition.hint > .admonition-title,
-   body.custom-style-enabled div.admonition.note > .admonition-title,
-    body.custom-style-enabled div.admonition.seealso > .admonition-title,
-     body.custom-style-enabled div.admonition.tip > .admonition-title,
-      body.custom-style-enabled div.admonition.remark > .admonition-title  {
-    background-color: var(--tud-green-mid);
-  }
-  body.custom-style-enabled div.admonition.hint > .admonition-title::after,
-   body.custom-style-enabled div.admonition.note > .admonition-title::after,
-    body.custom-style-enabled div.admonition.seealso > .admonition-title::after,
-     body.custom-style-enabled div.admonition.tip > .admonition-title::after,
-     body.custom-style-enabled div.admonition.remark > .admonition-title::after {
-    color: var(--tud-green);
-  }
+body.custom-style-enabled div.grasple>p.admonition-title {
+  background-color: var(--tud-raspberry-mid);
+}
 
-  /* Sticky note for remark */
-  body.custom-style-enabled div.admonition.remark > .admonition-title::after {
-    content: "\f249";
-  }
+body.custom-style-enabled div.grasple button.fullscreen-btn {
+  color: var(--tud-raspberry);
+}
 
-  /* Topic */
-  body.custom-style-enabled aside.topic {
-    background-color: var(--tud-gray-mid);
-  }
+/* Exercise */
+body.custom-style-enabled div.exercise p.admonition-title::after {
+  content: "\f12e";
+  color: var(--tud-raspberry);
+}
 
-  /* Version Added */
-  body.custom-style-enabled div.versionadded {
-    border-color: var(--tud-darkGreen);
-    background-color: var(--tud-darkGreen-mid);
-  }
-  body.custom-style-enabled div.versionadded .versionmodified.added::before {
-    color: var(--tud-darkGreen);
-  }
+body.custom-style-enabled div.exercise p.admonition-title::before {
+  content: "";
+}
 
-  /* Version Changed */
-  body.custom-style-enabled div.versionchanged {
-    border-color: var(--tud-orange);
-    background-color: var(--tud-orange-mid);
-  }
-  body.custom-style-enabled div.versionchanged .versionmodified.changed::before {
-    color: var(--tud-orange);
-  }
+body.custom-style-enabled div.exercise {
+  border-color: var(--tud-raspberry);
+  background-color: var(--tud-raspberry-min);
+}
 
-  /* Version Deprecated */
-  body.custom-style-enabled div.deprecated {
-    border-color: var(--tud-red);
-    background-color: var(--tud-red-mid);
-  }
-  body.custom-style-enabled div.deprecated .versionmodified.deprecated::before {
-    color: var(--tud-red);
-  }
+body.custom-style-enabled div.exercise>p.admonition-title {
+  background-color: var(--tud-raspberry-mid);
+}
 
-  #toggle-css{
-    color: var(--tud-gray) !important;
-  }
+/* Definition */
+body.custom-style-enabled div.definition p.admonition-title::after {
+  content: "\f02d";
+  color: var(--tud-blue);
+}
 
-  body.custom-style-enabled #toggle-css{
-    color: var(--tud-black) !important;
-  }
+body.custom-style-enabled div.definition {
+  border-color: var(--tud-blue);
+  background-color: var(--tud-blue-min);
+}
 
-  body.custom-style-enabled #tudelft-logo{
-    opacity: 1;
-  }
+body.custom-style-enabled div.definition>p.admonition-title {
+  background-color: var(--tud-blue-mid);
+}
 
-  /* BADGES */
+/* Axiom, Conjecture, Assumption */
+body.custom-style-enabled div.axiom p.admonition-title::after,
+body.custom-style-enabled div.assumption p.admonition-title::after,
+body.custom-style-enabled div.conjecture p.admonition-title::after {
+  content: "\f19c";
+  color: var(--tud-red);
+}
 
-  /* all badges */
-  body.custom-style-enabled .sd-badge {
-    padding: .35em .65em;
-    font-size: 0.9em;
-    font-weight: 700;
-    line-height: 1;
-    border-radius: .45rem;
-  }
+body.custom-style-enabled div.axiom,
+body.custom-style-enabled div.assumption,
+body.custom-style-enabled div.conjecture {
+  border-color: var(--tud-red);
+  background-color: var(--tud-red-min);
+}
 
-  /* primary */
-  body.custom-style-enabled .sd-bg-primary{
-    color: #FFFFFF !important;
-    background-color: var(--tud-cyan) !important;
-  }
-  /* primary-line */
-  body.custom-style-enabled .sd-outline-primary{
-    color: var(--tud-cyan) !important;
-    border-color: var(--tud-cyan) !important;
-  }
+body.custom-style-enabled div.axiom>p.admonition-title,
+body.custom-style-enabled div.assumption>p.admonition-title,
+body.custom-style-enabled div.conjecture>p.admonition-title {
+  background-color: var(--tud-red-mid);
+}
 
-  /* secondary */
-  body.custom-style-enabled .sd-bg-secondary,
-  body.custom-style-enabled .sd-btn-secondary{
-    color: #FFFFFF !important;
-    background-color: var(--tud-yellow) !important;
-  }
-  /* secondary-line */
-  body.custom-style-enabled .sd-outline-secondary{
-    color: var(--tud-yellow) !important;
-    border-color: var(--tud-yellow) !important;
-  }
+/* Property, Observation */
+body.custom-style-enabled div.property p.admonition-title::after,
+body.custom-style-enabled div.admonition.observation>.admonition-title::after {
+  content: "\f02b";
+  color: var(--tud-orange);
+}
 
-  /* success */
-  body.custom-style-enabled .sd-bg-success{
-    color: #FFFFFF !important;
-    background-color: var(--tud-darkGreen) !important;
-  }
-  /* success-line */
-  body.custom-style-enabled .sd-outline-success{
-    color: var(--tud-darkGreen) !important;
-    border-color: var(--tud-darkGreen) !important;
-  }
+body.custom-style-enabled div.property,
+body.custom-style-enabled div.admonition.observation {
+  border-color: var(--tud-orange);
+  background-color: var(--tud-orange-min);
+}
 
-  /* info */
-  body.custom-style-enabled .sd-bg-info{
-    color: #FFFFFF !important;
-    background-color: var(--tud-blue) !important;
-  }
-  /* info-line */
-  body.custom-style-enabled .sd-outline-info{
-    color: var(--tud-blue) !important;
-    border-color: var(--tud-blue) !important;
-  }
+body.custom-style-enabled div.property>p.admonition-title,
+body.custom-style-enabled div.admonition.observation>.admonition-title {
+  background-color: var(--tud-orange-mid);
+}
 
-  /* warning */
-  body.custom-style-enabled .sd-bg-warning{
-    color: #FFFFFF !important;
-    background-color: var(--tud-orange) !important;
-  }
-  /* warning-line */
-  body.custom-style-enabled .sd-outline-warning{
-    color: var(--tud-orange) !important;
-    border-color: var(--tud-orange) !important;
-  }
+/* Theorem, Lemma, Preposition, Corollary, Criterion  */
+body.custom-style-enabled div.theorem p.admonition-title::after,
+body.custom-style-enabled div.criterion p.admonition-title::after,
+body.custom-style-enabled div.lemma p.admonition-title::after,
+body.custom-style-enabled div.proposition p.admonition-title::after,
+body.custom-style-enabled div.corollary p.admonition-title::after {
+  content: "\f51b";
+  color: var(--tud-darkGreen);
+}
 
-  /* danger */
-  body.custom-style-enabled .sd-bg-danger{
-    color: #FFFFFF !important;
-    background-color: var(--tud-red) !important;
-  }
-  /* danger-line */
-  body.custom-style-enabled .sd-outline-danger{
-    color: var(--tud-red) !important;
-    border-color: var(--tud-red) !important;
-  }
+body.custom-style-enabled div.theorem,
+body.custom-style-enabled div.criterion,
+body.custom-style-enabled div.lemma,
+body.custom-style-enabled div.proposition,
+body.custom-style-enabled div.corollary {
+  border-color: var(--tud-darkGreen);
+  background-color: var(--tud-darkGreen-min);
+}
 
-  /* light */
-  body.custom-style-enabled .sd-bg-light{
-    color: var(--tud-black) !important;
-    background-color: var(--tud-gray-mid) !important;
-  }
-  /* light-line */
-  body.custom-style-enabled .sd-outline-light{
-    color: var(--tud-gray) !important;
-    border-color: var(--tud-gray) !important;
-  }
+body.custom-style-enabled div.theorem>p.admonition-title,
+body.custom-style-enabled div.criterion>p.admonition-title,
+body.custom-style-enabled div.lemma>p.admonition-title,
+body.custom-style-enabled div.proposition>p.admonition-title,
+body.custom-style-enabled div.corollary>p.admonition-title {
+  background-color: var(--tud-darkGreen-mid);
+}
 
-  /* muted */
-  body.custom-style-enabled .sd-bg-muted{
-    color: #FFFFFF !important;
-    background-color: var(--tud-purple) !important;
-  }
-  /* muted-line */
-  body.custom-style-enabled .sd-outline-muted{
-    color: var(--tud-purple) !important;
-    border-color: var(--tud-purple) !important;
-  }
+/* Example */
+body.custom-style-enabled div.example {
+  border-color: var(--tud-yellow);
+  background-color: var(--tud-yellow-min);
+}
 
-  /* dark */
-  body.custom-style-enabled .sd-bg-dark{
-    color: #FFFFFF !important;
-    background-color: var(--tud-darkBlue) !important;
-  }
-  /* dark-line */
-  body.custom-style-enabled .sd-outline-dark{
-    color: var(--tud-darkBlue) !important;
-    border-color: var(--tud-darkBlue) !important;
-  }
+body.custom-style-enabled div.example>p.admonition-title {
+  background-color: var(--tud-yellow-mid);
+  /* color: white; */
+}
 
-  /* white */
-  body.custom-style-enabled .sd-bg-white{
-    color: var(--tud-black) !important;
-    background-color: #FFFFFF !important;
-  }
-  /* white-line */
-  body.custom-style-enabled .sd-outline-white{
-    color: #FFFFFF !important;
-    border-color: #FFFFFF !important;
-  }
+body.custom-style-enabled div.example p.admonition-title::after {
+  content: "\f002";
+  transform: scale(-1, 1);
+  color: var(--tud-yellow);
+}
 
-  /* black */
-  body.custom-style-enabled .sd-bg-black{
-    color: #FFFFFF !important;
-    background-color: var(--tud-black) !important;
-  }
-  /* black-line */
-  body.custom-style-enabled .sd-outline-black{
-    color: var(--tud-black) !important;
-    border-color: var(--tud-black) !important;
-  }
+body.custom-style-enabled div.example button.dual-btn svg {
+  color: var(--tud-yellow);
+}
 
-  /* BUTTONS */
+body.custom-style-enabled div.example button.dual-btn span:not(.active) {
+  color: var(--tud-gray);
+}
 
-  /* all buttons */
-  body.custom-style-enabled .sd-btn{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s, transform 0.3s;
-    border: 0 !important;
-  }
-  body.custom-style-enabled .sd-btn:hover{
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    border: 0 !important;
-  }
+/* Solution */
+body.custom-style-enabled div.admonition.solution {
+  border-color: var(--tud-purple);
+  background-color: var(--tud-purple-min);
+}
 
-  /* primary */
-  body.custom-style-enabled .sd-btn-primary,
-  body.custom-style-enabled .sd-btn-info{
-    color: #FFFFFF !important;
-    background-color: var(--tud-cyan) !important;
-    border-color: var(--tud-cyan) !important;
-  }
+body.custom-style-enabled div.admonition.solution>.admonition-title {
+  background-color: var(--tud-purple-mid);
+}
 
-  /* secondary */
-  body.custom-style-enabled .sd-btn-secondary{
-    color: #FFFFFF !important;
-    background-color: var(--tud-yellow) !important;
-    border-color: var(--tud-yellow) !important;
-  }
+body.custom-style-enabled div.admonition.solution>.admonition-title::after {
+  content: "\e5a0";
+  color: var(--tud-purple);
+}
 
-  /* success */
-  body.custom-style-enabled .sd-btn-success{
-    color: #FFFFFF !important;
-    background-color: var(--tud-darkGreen) !important;
-    border-color: var(--tud-darkGreen) !important;
-  }
+/* TU Delft Proof */
+body.custom-style-enabled div.admonition.tudproof {
+  border-color: var(--tud-darkGreen);
+  background-color: var(--tud-gray-min);
+}
 
-   /* info */
-   body.custom-style-enabled .sd-btn-info{
-     color: #FFFFFF !important;
-     background-color: var(--tud-blue) !important;
-     border-color: var(--tud-blue) !important;
-   }
+body.custom-style-enabled div.admonition.tudproof>.admonition-title {
+  background-color: var(--tud-gray-mid);
+}
 
-  /* warning */
-  body.custom-style-enabled .sd-btn-warning{
-    color: #FFFFFF !important;
-    background-color: var(--tud-orange) !important;
-    border-color: var(--tud-orange) !important;
-  }
+body.custom-style-enabled div.admonition.tudproof>.admonition-title::after {
+  content: "\f51c";
+  color: var(--tud-gray);
+}
 
-  /* danger */
-  body.custom-style-enabled .sd-btn-danger{
-    color: #FFFFFF !important;
-    background-color: var(--tud-red) !important;
-    border-color: var(--tud-red) !important;
-  }
+/* Algorithm */
+body.custom-style-enabled div.algorithm>.admonition-title::after {
+  content: "\f051";
+  color: var(--tud-darkBlue);
+}
 
-  /* light */
-  body.custom-style-enabled .sd-btn-light{
-    color: var(--tud-black) !important;
-    background-color: var(--tud-gray-mid) !important;
-    border-color: var(--tud-gray) !important;
-  }
+body.custom-style-enabled div.algorithm {
+  border-color: var(--tud-darkBlue);
+  background-color: var(--tud-darkBlue-min);
+}
 
-  /* muted */
-  body.custom-style-enabled .sd-btn-muted{
-    color: #FFFFFF !important;
-    background-color: var(--tud-purple) !important;
-    border-color: var(--tud-purple) !important;
-  }
+body.custom-style-enabled div.algorithm>.admonition-title {
+  background-color: var(--tud-darkBlue-mid);
+  border-top: .15rem solid var(--tud-darkBlue-mid);
+  border-bottom: .15rem solid var(--tud-darkBlue-mid);
+}
 
-  /* dark */
-  body.custom-style-enabled .sd-btn-dark{
-    color: #FFFFFF !important;
-    background-color: var(--tud-darkBlue) !important;
-    border-color: var(--tud-darkBlue) !important;
-  }
+/* Bonus */
+body.custom-style-enabled div.admonition.bonus {
+  border-color: var(--tud-gray);
+  background-color: var(--tud-gray-min);
+}
 
-  /* white */
-  body.custom-style-enabled .sd-btn-white{
-    color: var(--tud-black) !important;
-    background-color: #FFFFFF !important;
-    border-color: #FFFFFF !important;
-  }
+body.custom-style-enabled div.admonition.bonus>.admonition-title {
+  background-color: var(--tud-gray-mid);
+}
 
-  /* black */
-  body.custom-style-enabled .sd-btn-black{
-    color: #FFFFFF !important;
-    background-color: var(--tud-black) !important;
-    border-color: var(--tud-black) !important;
-  }
+body.custom-style-enabled div.admonition.bonus>.admonition-title::after {
+  content: "\f06b";
+  color: var(--tud-gray);
+}
 
-body.custom-style-enabled .tud-red {color: var(--tud-red);}
-body.custom-style-enabled .tud-blue {color: var(--tud-blue);}
-body.custom-style-enabled .tud-green {color: var(--tud-green);}
-body.custom-style-enabled .tud-raspberry {color: var(--tud-raspberry);}
-body.custom-style-enabled .tud-yellow {color: var(--tud-yellow);}
-body.custom-style-enabled .tud-darkGreen {color: var(--tud-darkGreen);}
-body.custom-style-enabled .tud-orange {color: var(--tud-orange);}
-body.custom-style-enabled .tud-cyan {color: var(--tud-cyan);}
-body.custom-style-enabled .tud-gray {color: var(--tud-gray);}
-body.custom-style-enabled .tud-purple {color: var(--tud-purple);}
-body.custom-style-enabled .tud-pink {color: var(--tud-pink);}
-body.custom-style-enabled .tud-darkBlue {color: var(--tud-darkBlue);}
+/* Caution, Warning, Attention, Important */
+body.custom-style-enabled div.admonition.caution,
+body.custom-style-enabled div.admonition.warning,
+body.custom-style-enabled div.admonition.attention,
+body.custom-style-enabled div.admonition.important {
+  border-color: var(--tud-orange);
+  background-color: var(--tud-orange-min);
+}
+
+body.custom-style-enabled div.admonition.caution>.admonition-title,
+body.custom-style-enabled div.admonition.warning>.admonition-title,
+body.custom-style-enabled div.admonition.attention>.admonition-title,
+body.custom-style-enabled div.admonition.important>.admonition-title {
+  background-color: var(--tud-orange-mid);
+}
+
+body.custom-style-enabled div.admonition.caution>.admonition-title::after,
+body.custom-style-enabled div.admonition.warning>.admonition-title::after,
+body.custom-style-enabled div.admonition.attention>.admonition-title::after,
+body.custom-style-enabled div.admonition.important>.admonition-title::after {
+  color: var(--tud-orange);
+}
+
+/* Danger, Error */
+body.custom-style-enabled div.admonition.danger,
+body.custom-style-enabled div.admonition.error {
+  border-color: var(--tud-red);
+  background-color: var(--tud-red-min);
+}
+
+body.custom-style-enabled div.admonition.danger>.admonition-title,
+body.custom-style-enabled div.admonition.error>.admonition-title {
+  background-color: var(--tud-red-mid);
+}
+
+body.custom-style-enabled div.admonition.danger>.admonition-title::after,
+body.custom-style-enabled div.admonition.error>.admonition-title::after {
+  color: var(--tud-red);
+}
+
+/* Hint, Note, SeeAlso, Tip, Remark */
+body.custom-style-enabled div.admonition.hint,
+body.custom-style-enabled div.admonition.note,
+body.custom-style-enabled div.admonition.seealso,
+body.custom-style-enabled div.admonition.tip,
+body.custom-style-enabled div.admonition.remark {
+  border-color: var(--tud-green);
+  background-color: var(--tud-green-min);
+}
+
+body.custom-style-enabled div.admonition.hint>.admonition-title,
+body.custom-style-enabled div.admonition.note>.admonition-title,
+body.custom-style-enabled div.admonition.seealso>.admonition-title,
+body.custom-style-enabled div.admonition.tip>.admonition-title,
+body.custom-style-enabled div.admonition.remark>.admonition-title {
+  background-color: var(--tud-green-mid);
+}
+
+body.custom-style-enabled div.admonition.hint>.admonition-title::after,
+body.custom-style-enabled div.admonition.note>.admonition-title::after,
+body.custom-style-enabled div.admonition.seealso>.admonition-title::after,
+body.custom-style-enabled div.admonition.tip>.admonition-title::after,
+body.custom-style-enabled div.admonition.remark>.admonition-title::after {
+  color: var(--tud-green);
+}
+
+/* Sticky note for remark */
+body.custom-style-enabled div.admonition.remark>.admonition-title::after {
+  content: "\f249";
+}
+
+/* Topic */
+body.custom-style-enabled aside.topic {
+  background-color: var(--tud-gray-mid);
+}
+
+/* Version Added */
+body.custom-style-enabled div.versionadded {
+  border-color: var(--tud-darkGreen);
+  background-color: var(--tud-darkGreen-mid);
+}
+
+body.custom-style-enabled div.versionadded .versionmodified.added::before {
+  color: var(--tud-darkGreen);
+}
+
+/* Version Changed */
+body.custom-style-enabled div.versionchanged {
+  border-color: var(--tud-orange);
+  background-color: var(--tud-orange-mid);
+}
+
+body.custom-style-enabled div.versionchanged .versionmodified.changed::before {
+  color: var(--tud-orange);
+}
+
+/* Version Deprecated */
+body.custom-style-enabled div.deprecated {
+  border-color: var(--tud-red);
+  background-color: var(--tud-red-mid);
+}
+
+body.custom-style-enabled div.deprecated .versionmodified.deprecated::before {
+  color: var(--tud-red);
+}
+
+#toggle-css {
+  color: var(--tud-gray) !important;
+}
+
+body.custom-style-enabled #toggle-css {
+  color: var(--tud-black) !important;
+}
+
+body.custom-style-enabled #tudelft-logo {
+  opacity: 1;
+}
+
+/* BADGES */
+
+/* all badges */
+body.custom-style-enabled .sd-badge {
+  padding: .35em .65em;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: .45rem;
+}
+
+/* primary */
+body.custom-style-enabled .sd-bg-primary {
+  color: #FFFFFF !important;
+  background-color: var(--tud-cyan) !important;
+}
+
+/* primary-line */
+body.custom-style-enabled .sd-outline-primary {
+  color: var(--tud-cyan) !important;
+  border-color: var(--tud-cyan) !important;
+}
+
+/* secondary */
+body.custom-style-enabled .sd-bg-secondary,
+body.custom-style-enabled .sd-btn-secondary {
+  color: #FFFFFF !important;
+  background-color: var(--tud-yellow) !important;
+}
+
+/* secondary-line */
+body.custom-style-enabled .sd-outline-secondary {
+  color: var(--tud-yellow) !important;
+  border-color: var(--tud-yellow) !important;
+}
+
+/* success */
+body.custom-style-enabled .sd-bg-success {
+  color: #FFFFFF !important;
+  background-color: var(--tud-darkGreen) !important;
+}
+
+/* success-line */
+body.custom-style-enabled .sd-outline-success {
+  color: var(--tud-darkGreen) !important;
+  border-color: var(--tud-darkGreen) !important;
+}
+
+/* info */
+body.custom-style-enabled .sd-bg-info {
+  color: #FFFFFF !important;
+  background-color: var(--tud-blue) !important;
+}
+
+/* info-line */
+body.custom-style-enabled .sd-outline-info {
+  color: var(--tud-blue) !important;
+  border-color: var(--tud-blue) !important;
+}
+
+/* warning */
+body.custom-style-enabled .sd-bg-warning {
+  color: #FFFFFF !important;
+  background-color: var(--tud-orange) !important;
+}
+
+/* warning-line */
+body.custom-style-enabled .sd-outline-warning {
+  color: var(--tud-orange) !important;
+  border-color: var(--tud-orange) !important;
+}
+
+/* danger */
+body.custom-style-enabled .sd-bg-danger {
+  color: #FFFFFF !important;
+  background-color: var(--tud-red) !important;
+}
+
+/* danger-line */
+body.custom-style-enabled .sd-outline-danger {
+  color: var(--tud-red) !important;
+  border-color: var(--tud-red) !important;
+}
+
+/* light */
+body.custom-style-enabled .sd-bg-light {
+  color: var(--tud-black) !important;
+  background-color: var(--tud-gray-mid) !important;
+}
+
+/* light-line */
+body.custom-style-enabled .sd-outline-light {
+  color: var(--tud-gray) !important;
+  border-color: var(--tud-gray) !important;
+}
+
+/* muted */
+body.custom-style-enabled .sd-bg-muted {
+  color: #FFFFFF !important;
+  background-color: var(--tud-purple) !important;
+}
+
+/* muted-line */
+body.custom-style-enabled .sd-outline-muted {
+  color: var(--tud-purple) !important;
+  border-color: var(--tud-purple) !important;
+}
+
+/* dark */
+body.custom-style-enabled .sd-bg-dark {
+  color: #FFFFFF !important;
+  background-color: var(--tud-darkBlue) !important;
+}
+
+/* dark-line */
+body.custom-style-enabled .sd-outline-dark {
+  color: var(--tud-darkBlue) !important;
+  border-color: var(--tud-darkBlue) !important;
+}
+
+/* white */
+body.custom-style-enabled .sd-bg-white {
+  color: var(--tud-black) !important;
+  background-color: #FFFFFF !important;
+}
+
+/* white-line */
+body.custom-style-enabled .sd-outline-white {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+/* black */
+body.custom-style-enabled .sd-bg-black {
+  color: #FFFFFF !important;
+  background-color: var(--tud-black) !important;
+}
+
+/* black-line */
+body.custom-style-enabled .sd-outline-black {
+  color: var(--tud-black) !important;
+  border-color: var(--tud-black) !important;
+}
+
+/* BUTTONS */
+
+/* all buttons */
+body.custom-style-enabled .sd-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: 0 !important;
+}
+
+body.custom-style-enabled .sd-btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  border: 0 !important;
+}
+
+/* primary */
+body.custom-style-enabled .sd-btn-primary,
+body.custom-style-enabled .sd-btn-info {
+  color: #FFFFFF !important;
+  background-color: var(--tud-cyan) !important;
+  border-color: var(--tud-cyan) !important;
+}
+
+/* secondary */
+body.custom-style-enabled .sd-btn-secondary {
+  color: #FFFFFF !important;
+  background-color: var(--tud-yellow) !important;
+  border-color: var(--tud-yellow) !important;
+}
+
+/* success */
+body.custom-style-enabled .sd-btn-success {
+  color: #FFFFFF !important;
+  background-color: var(--tud-darkGreen) !important;
+  border-color: var(--tud-darkGreen) !important;
+}
+
+/* info */
+body.custom-style-enabled .sd-btn-info {
+  color: #FFFFFF !important;
+  background-color: var(--tud-blue) !important;
+  border-color: var(--tud-blue) !important;
+}
+
+/* warning */
+body.custom-style-enabled .sd-btn-warning {
+  color: #FFFFFF !important;
+  background-color: var(--tud-orange) !important;
+  border-color: var(--tud-orange) !important;
+}
+
+/* danger */
+body.custom-style-enabled .sd-btn-danger {
+  color: #FFFFFF !important;
+  background-color: var(--tud-red) !important;
+  border-color: var(--tud-red) !important;
+}
+
+/* light */
+body.custom-style-enabled .sd-btn-light {
+  color: var(--tud-black) !important;
+  background-color: var(--tud-gray-mid) !important;
+  border-color: var(--tud-gray) !important;
+}
+
+/* muted */
+body.custom-style-enabled .sd-btn-muted {
+  color: #FFFFFF !important;
+  background-color: var(--tud-purple) !important;
+  border-color: var(--tud-purple) !important;
+}
+
+/* dark */
+body.custom-style-enabled .sd-btn-dark {
+  color: #FFFFFF !important;
+  background-color: var(--tud-darkBlue) !important;
+  border-color: var(--tud-darkBlue) !important;
+}
+
+/* white */
+body.custom-style-enabled .sd-btn-white {
+  color: var(--tud-black) !important;
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+/* black */
+body.custom-style-enabled .sd-btn-black {
+  color: #FFFFFF !important;
+  background-color: var(--tud-black) !important;
+  border-color: var(--tud-black) !important;
+}
+
+body.custom-style-enabled .tud-red {
+  color: var(--tud-red);
+}
+
+body.custom-style-enabled .tud-blue {
+  color: var(--tud-blue);
+}
+
+body.custom-style-enabled .tud-green {
+  color: var(--tud-green);
+}
+
+body.custom-style-enabled .tud-raspberry {
+  color: var(--tud-raspberry);
+}
+
+body.custom-style-enabled .tud-yellow {
+  color: var(--tud-yellow);
+}
+
+body.custom-style-enabled .tud-darkGreen {
+  color: var(--tud-darkGreen);
+}
+
+body.custom-style-enabled .tud-orange {
+  color: var(--tud-orange);
+}
+
+body.custom-style-enabled .tud-cyan {
+  color: var(--tud-cyan);
+}
+
+body.custom-style-enabled .tud-gray {
+  color: var(--tud-gray);
+}
+
+body.custom-style-enabled .tud-purple {
+  color: var(--tud-purple);
+}
+
+body.custom-style-enabled .tud-pink {
+  color: var(--tud-pink);
+}
+
+body.custom-style-enabled .tud-darkBlue {
+  color: var(--tud-darkBlue);
+}
