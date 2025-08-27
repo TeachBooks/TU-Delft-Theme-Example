@@ -39,6 +39,7 @@ sphinx:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
+    - sphinx_accessibility
 
 bibtex_bibfiles: 
   - references.bib

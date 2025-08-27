@@ -6,3 +6,5 @@ download_link_replacer
 sphinx-proof
 sphinx-togglebutton
 sphinx-exercise
+
+git+https://github.com/TeachBooks/Sphinx-Accessibility
