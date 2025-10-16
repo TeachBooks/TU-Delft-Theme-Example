@@ -208,18 +208,21 @@ body.custom-style-enabled div.exercise>p.admonition-title {
   background-color: var(--tud-raspberry-mid);
 }
 
-/* Definition */
-body.custom-style-enabled div.definition p.admonition-title::after {
+/* Definition, Notation */
+body.custom-style-enabled div.definition p.admonition-title::after,
+body.custom-style-enabled div.notation p.admonition-title::after {
   content: "\f02d";
   color: var(--tud-blue);
 }
 
-body.custom-style-enabled div.definition {
+body.custom-style-enabled div.definition,
+body.custom-style-enabled div.notation {
   border-color: var(--tud-blue);
   background-color: var(--tud-blue-min);
 }
 
-body.custom-style-enabled div.definition>p.admonition-title {
+body.custom-style-enabled div.definition>p.admonition-title,
+body.custom-style-enabled div.notation>p.admonition-title {
   background-color: var(--tud-blue-mid);
 }
 

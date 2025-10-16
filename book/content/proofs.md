@@ -371,6 +371,17 @@ This is a dummy assumption directive.
 ::::::
 ````
 
+## `prf:notation`
+
+::::::{prf:notation}
+This is a dummy notation directive.
+::::::
+````md
+::::::{prf:notation}
+This is a dummy notation directive.
+::::::
+````
+
 ## Dropdown
 
 Directive content can be hidden using the `dropdown` class which is available through [sphinx-togglebutton](https://sphinx-togglebutton.readthedocs.io/en/latest/). If your project utilizes the [MyST-NB](https://myst-nb.readthedocs.io/en/latest/) extension, there is no need to activate `sphinx-togglebutton` since it is already bundled with `MyST-NB`.
