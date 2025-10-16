@@ -3,8 +3,9 @@ teachbooks # depends on jupyter-book
 jupyterbook-patches
 sphinx-image-inverter
 download_link_replacer
-sphinx-proof
-sphinx-togglebutton
-sphinx-exercise
 
 git+https://github.com/TeachBooks/Sphinx-Accessibility
+git+https://github.com/teachbooks/sphinx-proof
+git+https://github.com/teachbooks/sphinx-exercise
+git+https://github.com/teachbooks/sphinx-togglebutton
+git+https://github.com/teachbooks/sphinx-external-toc
